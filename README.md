@@ -35,6 +35,8 @@ Every row has a registry entry with the original rules, data, pass criteria and 
   <img alt="Scatter of actual win rate versus random baseline for the Brooks experiments; out-of-sample points sit on the diagonal" src="docs/img/brooks_vs_random_light.png" width="720">
 </picture>
 
+Beating the line is necessary but not enough: the margin also has to cover costs. #04 on ES beat random by 3.5 points (36.8% vs 33.3% at a 2R target), about +0.10R per trade before costs, and still lost money after commission and slippage (profit factor 0.91).
+
 | # | Rule | Key result | Verdict |
 |---|---|---|---|
 | [01](registry/brooks-01-pullback.md) | With-trend H2/L2 pullback, target 1R / 2R / prior extreme | Win rate 47.3% / 32.5% / 27.5%, right at the random baseline of ~50% / ~33% / lower | No edge |
