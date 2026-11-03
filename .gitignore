@@ -1,0 +1,24 @@
+# Market data: licences do not allow redistribution
+data/*
+!data/README.md
+*.dbn
+*.dbn.zst
+*.parquet
+
+# Backtest outputs
+results/
+
+# Keys and local config
+.env
+.env.*
+*secret*
+*token*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS files
+.DS_Store
