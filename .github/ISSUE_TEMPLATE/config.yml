@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "Method / 検証方法"
+    url: https://github.com/stellar-research/strategy-autopsy/blob/main/docs/method.md
+    about: "How experiments are registered and judged. / 実験の登録と判定の方法"

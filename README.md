@@ -30,6 +30,11 @@ Every row has a registry entry with the original rules, data, pass criteria and 
 
 ### Al Brooks price action (7 rounds, ES / MES / NQ, 2010-2025)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/brooks_vs_random_dark.png">
+  <img alt="Scatter of actual win rate versus random baseline for the Brooks experiments; out-of-sample points sit on the diagonal" src="docs/img/brooks_vs_random_light.png" width="720">
+</picture>
+
 | # | Rule | Key result | Verdict |
 |---|---|---|---|
 | [01](registry/brooks-01-pullback.md) | With-trend H2/L2 pullback, target 1R / 2R / prior extreme | Win rate 47.3% / 32.5% / 27.5%, right at the random baseline of ~50% / ~33% / lower | No edge |
@@ -43,6 +48,11 @@ Every row has a registry entry with the original rules, data, pass criteria and 
 #07 is the only round that was positive over a long history, but its win rate is not significantly different from random, and 2 extra ticks of slippage per side bring the profit factor to 1.00.
 
 ### ICT / Smart Money Concepts (ES / NQ / MES, 2010-2025)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/ict_r_dark.png">
+  <img alt="Bar chart of ICT average R per trade before and after costs by period; near zero before costs, negative after" src="docs/img/ict_r_light.png" width="720">
+</picture>
 
 | # | Rule | Key result | Verdict |
 |---|---|---|---|
@@ -118,7 +128,7 @@ strategy-autopsy/
 │   ├── report.py        # random baseline, z score, slippage sensitivity, by year
 │   └── random_walk.py   # random-walk data for the honesty check
 ├── data/README.md       # data format (no data included)
-└── docs/method.md / method.ja.md
+└── docs/            # method.md / method.ja.md, img/ (figures + make_figures.py)
 ```
 
 ---

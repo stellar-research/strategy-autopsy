@@ -30,6 +30,11 @@
 
 ### Al Brooks プライスアクション（7 ラウンド、ES / MES / NQ、2010–2025）
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/brooks_vs_random_dark.png">
+  <img alt="Brooks の各実験の実際の勝率とランダム基準の散布図。未使用データの点は対角線上にある" src="docs/img/brooks_vs_random_light.png" width="720">
+</picture>
+
 | # | ルール | 主な結果 | 判定 |
 |---|---|---|---|
 | [01](registry/brooks-01-pullback.md) | 順張りの押し目 H2/L2、利確 1R / 2R / 直前の高安 | 勝率 47.3% / 32.5% / 27.5%。ランダム基準（約 50% / 約 33% / それ以下）とほぼ同じ | 優位性なし |
@@ -43,6 +48,11 @@
 07 は長期で唯一プラスになったラウンドですが、勝率はランダムと有意差がなく、片道 2 ティックのスリッページを追加すると PF は 1.00 になります。
 
 ### ICT / スマートマネーコンセプト（ES / NQ / MES、2010–2025）
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/ict_r_dark.png">
+  <img alt="ICT の期間別・コスト前後の平均 R。コスト前はほぼゼロ、コスト後はマイナス" src="docs/img/ict_r_light.png" width="720">
+</picture>
 
 | # | ルール | 主な結果 | 判定 |
 |---|---|---|---|
@@ -118,7 +128,7 @@ strategy-autopsy/
 │   ├── report.py        # ランダム基準、z 値、スリッページ感度、年別
 │   └── random_walk.py   # 正直さチェック用のランダムウォーク
 ├── data/README.md       # データ形式（データは含まない）
-└── docs/method.md / method.ja.md
+└── docs/            # method.md / method.ja.md, img/ (figures + make_figures.py)
 ```
 
 ---

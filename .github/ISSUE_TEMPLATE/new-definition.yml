@@ -1,0 +1,64 @@
+name: "Propose a different rule definition / 別の定義を提案する"
+description: "Think our definition of a Brooks or ICT concept is wrong? Register yours here before anyone runs it. / Brooks や ICT の定義が違うと思ったら、検証前にここで登録してください。"
+title: "[definition] <concept>: <short description>"
+labels: ["new-definition"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for challenging the rules. Every definition here is fixed **before** it is backtested, so please fill in everything below. Once someone runs it, the rules cannot change.
+        ルールへの指摘をありがとうございます。ここでは定義を**検証前に**固定します。以下をすべて記入してください。一度検証したらルールは変更できません。
+  - type: input
+    id: concept
+    attributes:
+      label: "Concept / 概念"
+      description: "e.g. FVG, order block, H2, failed breakout"
+    validations:
+      required: true
+  - type: input
+    id: existing
+    attributes:
+      label: "Which experiment does this replace or extend? / どの実験の定義を置き換える・拡張するか"
+      description: "e.g. ict-01, brooks-06, or 'new'"
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: "Source / 出典"
+      description: "Book chapter, video and timestamp, or course material. / 書籍の章、動画とタイムスタンプ、講座資料など"
+    validations:
+      required: true
+  - type: textarea
+    id: rules
+    attributes:
+      label: "Rules (codeable, no 'it depends') / ルール（コードにできること）"
+      description: "Entry, stop, target, filters, time limits. Numbers, not judgement. / エントリー・損切り・利確・フィルター・時間制限。判断ではなく数値で。"
+      placeholder: |
+        Entry:
+        Stop:
+        Target:
+        Filters:
+        Time limits:
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: "Pass criteria, fixed in advance / 事前に固定する合格基準"
+      description: "e.g. ≥ 300 trades, win rate significantly above the random baseline, profit factor > 1.1 after 1 extra tick of slippage"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: "Why is our version wrong? / 現行の定義のどこが違うか"
+    validations:
+      required: false
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: "Agreement / 確認"
+      options:
+        - label: "I understand the rules are frozen once this is run, and the result will be published whether it passes or fails. / 実行後はルールを変更できず、合否にかかわらず結果が公開されることを理解しています。"
+          required: true
